@@ -1,5 +1,4 @@
    Andreja Premium Control Board Replacement 
-   Written By Anthony DiPilato
    
    This project replaces the Gicar control board from a Quickmill Andreja Premium with
    an Arduino Uno, a four channel relay board (3 channels used), and a piezo buzzer.
