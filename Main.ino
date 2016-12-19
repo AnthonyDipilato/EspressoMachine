@@ -21,16 +21,13 @@
  *   
  */
 
+// Configuration
+#include "Configuration.h"
+
 // Include Melody library and Sensors class
 #include "Melody.h"
 #include "Sensors.h"
 
-// Setup Relay Pins
-#define VALVE 8 // Was pin 13 but is connected to led which blinks on startup triggering the relay
-#define PUMP 12
-#define HEAT 11
-// Debug status serial output
-#define DEBUG true
 
 
 // Setup melodies
@@ -44,7 +41,7 @@ Sensors lower_water(2);
 // Status for heater valve and pump
 int heat_state = 1;
 int pump_state = 0; // pump and valve are shared
-int pump_delay = 500; // minimum run time for pump
+
 long pump_time = 0;
 
 // We are going to do a 5% chance to play star wars theme when it starts up
@@ -113,7 +110,7 @@ void toggle_pump(int state){
     return;
   }
   if(state == 0){
-      if ((millis() - pump_time) > pump_delay) {
+      if ((millis() - pump_time) > PUMP_DELAY) {
           // Turn off pump before valve
           digitalWrite(PUMP, HIGH); // High is off
           digitalWrite(VALVE, HIGH);
