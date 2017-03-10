@@ -4,7 +4,7 @@
    an Arduino Uno, a four channel relay board (3 channels used), and a piezo buzzer.
    $20 in parts to replace a ~$200 control board.
    
-   Additional details can be found at [url]
+   Additional details can be found at [http://anthonydipilato.com/2016/07/05/arduino-controlled-espresso-machine/](http://anthonydipilato.com/2016/07/05/arduino-controlled-espresso-machine/)
    
    The arduino monitors the two float switches in the water reservoir and the water level probe in the boiler.
    The boiler temperature is maintained by the pressurestat.
