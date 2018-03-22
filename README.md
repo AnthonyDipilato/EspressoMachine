@@ -1,4 +1,5 @@
 # Andreja Premium Control Board Replacement 
+![Espresso Machine](http://anthonydipilato.com/wp-content/uploads/2018/03/espresso.png)
 
 This project replaces the Gicar control board from a Quickmill Andreja Premium with an Arduino Uno, a four channel relay board (3 channels used), and a piezo buzzer. $20 in parts to replace a ~$200 control board.
 
